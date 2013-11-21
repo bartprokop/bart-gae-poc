@@ -9,7 +9,7 @@
     </listener>
     
     <welcome-file-list>
-        <welcome-file>/SomeServlet</welcome-file>
+        <welcome-file>SomeServlet</welcome-file>
     </welcome-file-list>
     
     <servlet>
