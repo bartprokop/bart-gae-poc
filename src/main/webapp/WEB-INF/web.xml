@@ -8,16 +8,25 @@
         <listener-class>com.appspot.bartgaepoc.WarmupListener</listener-class>
     </listener>
     
-    <welcome-file-list>
-        <welcome-file>/SomeServlet</welcome-file>
-    </welcome-file-list>
-    
+    <!-- ******************************************************************* -->
+    <!-- Vaadin configuration -->
+    <context-param>
+        <description>Vaadin production mode</description>
+        <param-name>productionMode</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
     <servlet>
-        <servlet-name>SomeServlet</servlet-name>
-        <servlet-class>com.appspot.bartgaepoc.SomeServlet</servlet-class>
+        <servlet-name>VaadinApplication</servlet-name>
+        <servlet-class>com.vaadin.server.GAEVaadinServlet</servlet-class>
+        <init-param>
+            <description>Vaadin Application</description>
+            <param-name>UI</param-name>
+            <param-value>com.appspot.bartgaepoc.AppUI</param-value>
+        </init-param>
     </servlet>
     <servlet-mapping>
-        <servlet-name>SomeServlet</servlet-name>
-        <url-pattern>/SomeServlet</url-pattern>
+        <servlet-name>VaadinApplication</servlet-name>
+        <url-pattern>/*</url-pattern>
     </servlet-mapping>
 </web-app>
