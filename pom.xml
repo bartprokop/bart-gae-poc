@@ -9,8 +9,8 @@
     <packaging>war</packaging>
 
     <name>Bart GAE PoC</name>
-    <description>Wszystko mająca aplikacja chmurowa</description>
-    <url>https://bart-gae-poc.appspot.com</url>
+    <description>Vaadin GAE Spring</description>
+    <url>https://2.bart-gae-poc.appspot.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
